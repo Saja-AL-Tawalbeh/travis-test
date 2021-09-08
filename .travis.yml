@@ -1,22 +1,18 @@
 sudo: false
-dist: trusty
+dist: focal
 language: cpp
 compiler:
 - gcc
 
-addons:
-apt:
 sources:
 - ubuntu-toolchain-r-test
+
 packages:
 - g++-7
 - cmake
 
 env:
 - CC=/usr/bin/gcc CXX=/usr/bin/g++
-
-install:
-- if [ "$CXX" = "g++" ]; then export CXX="g++-7" CC="gcc-7"; fi
 
 script:
 - mkdir build
