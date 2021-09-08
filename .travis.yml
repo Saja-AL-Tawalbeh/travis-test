@@ -18,5 +18,5 @@ install:
 script:
 - mkdir build
 - cd build
-- gcc -v && g++ -v && cmake --version
-- cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make.
+- cmake ..
+- make
