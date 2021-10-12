@@ -1,5 +1,5 @@
-#include <iostream>
+#include "test.h"
 
 int main() {
-    std::cout << "Travis Test!" << std::endl;
+    Test test;
 }
